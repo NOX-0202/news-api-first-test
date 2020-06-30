@@ -2,7 +2,7 @@
 
     define('BASE_URL', 'https://newsapi.org/v2');
 
-    define('HEADLINES', '/top-headlines?country=pt&apiKey=d484934f136d4a6d91ced68942e52880');
+    define('HEADLINES', '/top-headlines?country=us&apiKey=d484934f136d4a6d91ced68942e52880');
 
    
     $req = curl_init();

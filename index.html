@@ -8,28 +8,60 @@
     <title>NewsApi</title>
 </head>
 <body>
-    <header class="text-center"> 
-        <h1>
-            NewsTest
-        </h1>
+    <header class="mb-4"> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
+            <div class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" id="search" placeholder="Digite para Encontrar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" onclick="search()">Pesquisar</button>
+            </div>
+            
+            </div>
+          </nav>
     </header>
     <main class="container">
-        <input type="text" id="search" class="input_w100" placeholder="digite para encontrar">
-        <button type="button" class="btn btn-primary" onclick="search()">Encontrar</button>
-        
-        <div class="row">
-            <section class="col-lg-2">
-                <h1>Top Autores</h1>
-                <div id="Sources"></div>
-            </section>
+        <div class="row ">
+            <div class="col-lg-2">
+                <h2>Suas Pesquisas</h2>
+                <ul id="list_visited" class="ml-3"></ul>
+            </div>
             <section class="col-lg-8">
                 <h1 class="mb-3 w-100">Top artigos da semana</h1>
                 <div id="result" class="article_container"></div>
             </section>
-            <div class="col-lg-2">
-                <h2>Suas Pesquisas</h2>
-                <ul id="list_visited"></ul>
-            </div>
+            <section class="col-lg-2">
+                <h1>Top Autores</h1>
+                <div id="Sources"></div>
+            </section>
         </div>
     </main>
     <script src="./js/jquery.js"></script>

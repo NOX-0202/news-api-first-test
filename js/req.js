@@ -8,7 +8,6 @@ function render(articles) {
 }
 
 function renderSources(data) {
-    console.log(data)
     for (let index = 0; index < 20; index++) {
         $('#Sources').append(`<article><header><h2 class="h6 font-weight-bold">${data[index].name}</h2></header><p class="h6">${data[index].description}</p></article>`);
     }
