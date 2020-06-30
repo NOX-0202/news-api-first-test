@@ -4,3 +4,22 @@
     box-sizing: border-box;
 }
 
+.input_w100{
+    width: calc(100% - 10%);
+}
+
+.article_container {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.article_box {
+    width:350px;
+    padding: 10px;
+}
+
+.article_img {
+    width: 100%;
+}

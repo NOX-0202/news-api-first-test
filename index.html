@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>NewsApi</title>
 </head>
 <body>
-    <input type="text" id="search" placeholder="digite para encontrar">
-    <button type="button" onclick="search()">Encontrar</button>
-    <section>
-        <h1>Top artigos da semana</h1>
-        <div id="result"></div>
-    </section>
+    <header class="text-center"> 
+        <h1>
+            NewsTest
+        </h1>
+    </header>
+    <main class="container">
+        <input type="text" id="search" class="input_w100" placeholder="digite para encontrar">
+        <button type="button" class="btn btn-primary" onclick="search()">Encontrar</button>
+        
+        <div class="row">
+            <section class="col-lg-2">
+                <h1>Top Autores</h1>
+                <div id="Sources"></div>
+            </section>
+            <section class="col-lg-8">
+                <h1 class="mb-3 w-100">Top artigos da semana</h1>
+                <div id="result" class="article_container"></div>
+            </section>
+            <div class="col-lg-2">
+                <h2>Suas Pesquisas</h2>
+                <ul id="list_visited"></ul>
+            </div>
+        </div>
+    </main>
     <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
     <script src="./js/req.js"></script>
 </body>
 </html>
